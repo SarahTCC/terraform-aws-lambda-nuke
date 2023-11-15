@@ -12,6 +12,7 @@ from nuke.compute.dlm import NukeDlm
 from nuke.compute.ebs import NukeEbs
 from nuke.compute.ec2 import NukeEc2
 from nuke.compute.ecr import NukeEcr
+from nuke.compute.ecs import NukeEcs
 from nuke.compute.eks import NukeEks
 from nuke.compute.elasticbeanstalk import NukeElasticbeanstalk
 from nuke.compute.elb import NukeElb
@@ -73,6 +74,7 @@ def lambda_handler(event, context):
         "key_pair": NukeKeypair,
         "security_group": NukeSecurityGroup,
         "network_acl": NukeNetworkAcl,
+        "ecs": NukeEcs
     }
 
     for aws_region in aws_regions:

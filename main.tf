@@ -64,6 +64,8 @@ data "aws_iam_policy_document" "nuke_compute" {
       "elasticloadbalancing:DeleteTargetGroup",
       "ecr:DescribeRepositories",
       "ecr:DeleteRepository",
+      "ecs:ListClusters",
+      "ecs:DeleteCluster",
       "eks:ListClusters",
       "eks:DescribeCluster",
       "eks:DeleteCluster",
